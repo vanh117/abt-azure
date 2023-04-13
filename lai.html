@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/7dbdc06b3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="lai.css" />
+    <style>
+        hr.style9 {
+	border-top: 1px dashed #8c8b8b;
+	border-bottom: 1px dashed black;
+}
+      .vertical {
+        border-left: 6px solid blue;
+        height: 200px;
+        position: absolute;
+        left: 20px;
+        border-radius: 6px;
+      }
+
+      .custom-btn {
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        outline: none;
+      }
+
+      .btn-9 {
+        border: none;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+      .btn-9:after {
+        position: absolute;
+        content: " ";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+        transition: all 0.3s ease;
+      }
+      .btn-9:hover {
+        background: transparent;
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+          -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+          inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+          inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+        color: black;
+      }
+      .btn-9:hover:after {
+        -webkit-transform: scale(2) rotate(180deg);
+        transform: scale(2) rotate(180deg);
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+          -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+          inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+          inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+      }
+
+      /* 12 */
+      .btn-12 {
+        position: relative;
+        right: 20px;
+        bottom: 20px;
+        border: none;
+        box-shadow: none;
+        width: 130px;
+        height: 40px;
+        line-height: 42px;
+        -webkit-perspective: 230px;
+        perspective: 230px;
+      }
+      .btn-12 span {
+        background: rgb(0, 172, 238);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 172, 238, 1) 0%,
+          rgba(2, 126, 251, 1) 100%
+        );
+        display: block;
+        position: absolute;
+        width: 130px;
+        height: 40px;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin: 0;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .btn-12 span:nth-child(1) {
+        box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+          7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+        -webkit-transform: rotateX(90deg);
+        -moz-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+        -webkit-transform-origin: 50% 50% -20px;
+        -moz-transform-origin: 50% 50% -20px;
+        transform-origin: 50% 50% -20px;
+      }
+      .btn-12 span:nth-child(2) {
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: 50% 50% -20px;
+        -moz-transform-origin: 50% 50% -20px;
+        transform-origin: 50% 50% -20px;
+      }
+      .btn-12:hover span:nth-child(1) {
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+      .btn-12:hover span:nth-child(2) {
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        color: transparent;
+        -webkit-transform: rotateX(-90deg);
+        -moz-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/7dbdc06b3b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="everything">
+      <div class="first">
+        <div class="vertical"></div>
+        <div class="left">
+          <h1>Giới thiệu về clb</h1>
+          <br />
+          <br />
+
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, aut
+            sint sequi nostrum cupiditate neque aspernatur maiores? Nihil, quasi
+            accusantium ut, quas maxime dolorem adipisci nobis, provident neque
+            minima quia!
+          </h3>
+        </div>
+        <div class="right">
+          <img src="img/logo-footer.png" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="text">
+          <h1>Chúng tôi làm gì?</h1>
+          <h2>Text goes here</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+            sem et velit tincidunt ultrices ac nec nibh. Aliquam erat volutpat.
+            In eu semper sapien. Donec auctor nisl nec diam facilisis, eu
+            sagittis elit consequat.
+          </p>
+          <button class="custom-btn btn-12">
+            <span>Click!</span
+            ><span
+              >Our team
+              <!-- <i
+                class="fa-light fa-arrow-right fa-beat"
+                style="color: #0752d5"
+              ></i> -->
+            </span>
+          </button>
+        </div>
+        <div class="image">
+          <img src="img/logo-footer.png" alt="Image description" />
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="img-2">
+          <img src="img/logo-footer.png" alt="Image description" />
+        </div>
+        <div class="text-2">
+          <h1>Chúng tôi là ai?</h1>
+          <h2>Text goes here</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+            sem et velit tincidunt ultrices ac nec nibh. Aliquam erat volutpat.
+            In eu semper sapien. Donec auctor nisl nec diam facilisis, eu
+            sagittis elit consequat.
+          </p>
+          <button class="custom-btn btn-12">
+            <span>Click!</span
+            ><span
+              >Our project
+              <!-- <i
+                class="fa-light fa-arrow-right fa-beat"
+                style="color: #0752d5"
+              ></i> -->
+            </span>
+
+        </div>
+
+      </div>
+      <div class="hr">
+      <br>
+      <hr class="style9">
+      <br>
+      </div>
+      <div class="container-3">
+        <div class="box1">
+          <img src="" alt="">
+          <a href="home.html" class="navlink" onclick="myfunction()">Giới thiệu về ngôn ngữ lập trình Swift</a>
+          
+          <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam doloribus obcaecati exercitationem, iusto dolorum sapiente expedita? Atque unde quasi vel maiores pariatur tempore aliquam minus officiis cum placeat! Consequuntur, soluta!</h3>
+        </div>
+        <div class="box2">
+          <img src="" alt="">
+          <a href="home.html" class="navlink" onclick="myfunction()">Giới thiệu về ngôn ngữ lập trình Swift</a>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod ipsa, consequuntur, officiis doloremque aliquam ab quia eum perspiciatis nesciunt enim sunt suscipit ducimus odit inventore voluptates voluptatum accusamus illo.</h3>
+        </div>
+      </div>
+      
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.first {
+  height: 700px;
+  width: 100%;
+  background-color: black;
+}
+.right {
+  position: relative;
+  margin-left: 60%;
+  padding-top: 30px;
+}
+.right img {
+  width: 50%;
+}
+.left {
+  text-align: left;
+  width: 40%;
+  margin-left: 30px;
+  position: absolute;
+  height: 100%;
+}
+.left h1 {
+  color: blue;
+  text-decoration-color: blue;
+}
+.left h3 {
+  color: white;
+}
+
+.nothing {
+  background-color: blue;
+  width: 1px;
+  height: 100px;
+  padding-left: 20px;
+  position: fixed;
+  border-radius: 50px;
+}
+.second {
+  background: black;
+  height: 100%;
+  width: 100%;
+}
+
+.trai {
+  background: whitesmoke;
+  border-radius: 10px 10px 0 0;
+  padding-top: 6px;
+  /* width: 50%; */
+  position: absolute;
+  color: blue;
+  margin-top: 30px;
+}
+.trai h1 {
+  color: white;
+}
+
+.phai {
+  background: whitesmoke;
+  border-radius: 0 10px 0 0;
+  padding-top: 6px;
+  width: 50%;
+  position: absolute;
+  padding-left: 50%;
+}
+.l {
+  background: whitesmoke;
+  width: 50%;
+}
+.r {
+  background: whitesmoke;
+  width: 50%;
+}
+.abt {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+.do {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+.trai img {
+  top: 1;
+  padding-left: 50%;
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 0px 10px 10px 0;
+}
+
+.text {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.image {
+  flex: 1;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.img-2 {
+  flex: 1;
+
+  /* margin-left: 30%; */
+}
+
+.text-2 {
+  flex: 1;
+  text-align: left;
+}
+
+.img-2 img {
+  max-width: 100%;
+}
+.container-3 {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-color: whitesmoke;
+}
+.hr {
+  background-color: whitesmoke;
+}
+.box1,
+.box2 {
+  flex: 1;
+  height: 50px;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  transition: color 0.5s;
+  width: 40%;
+}
+
+.box1:hover {
+  color: blue;
+}
+.box1 a {
+  font-size: 2em;
+  transition: 0.5s;
+  color: blue;
+}
+.box1:hover a {
+  color: blue;
+}
+.box1:hover a:not(:hover) {
+  color: blue;
+  opacity: 0.3;
+}
+.box2:hover {
+  color: blue;
+}
+.box2 a {
+  font-size: 2em;
+  transition: 0.5s;
+  color: blue;
+}
+.box2:hover a {
+  color: blue;
+}
+.box2:hover a:not(:hover) {
+  color: blue;
+  opacity: 0.3;
+}
+/* Adjust positioning of elements for smaller screens */
+@media only screen and (max-width: 768px) {
+  .right {
+    margin-left: 0;
+    text-align: center;
+  }
+  .left {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Make elements flexible for different screen sizes */
+.first {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.right {
+  position: relative;
+  margin-left: 60%;
+  padding-top: 30px;
+}
+
+.left {
+  text-align: left;
+  width: 40%;
+  margin-left: 30px;
+  position: absolute;
+}
+
+/* Simplify layout for smaller screens */
+.trai,
+.phai {
+  display: none;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.img-2 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.text-2 {
+  text-align: center;
+}
