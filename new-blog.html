@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new-blog.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="everything">
+      <div class="first">
+        <br />
+        <br />
+        <div class="vertical"></div>
+        <div class="left">
+          <br />
+          <br />
+          <h1>News and blogs</h1>
+          <br />
+          <br />
+
+          <h3>Cập nhật tin tức mới nhất về clb</h3>
+        </div>
+        <div class="right">
+          <img src="img/logo-footer.png" alt="" />
+        </div>
+        <br />
+      </div>
+      <div class="sec"></div>
+
+      <!-- <div class="display">
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="image1.jpg" />
+            <p>Caption text 1</p>
+          </div>
+
+          <div class="mySlides">
+            <img src="image2.jpg" />
+            <p>Caption text 2</p>
+          </div>
+
+          <div class="mySlides">
+            <img src="image3.jpg" />
+            <p>Caption text 3</p>
+          </div>
+
+          <button class="prev" onclick="plusSlides(-1)">❮</button>
+          <button class="next" onclick="plusSlides(1)">❯</button>
+        </div>
+      </div> -->
+      <br />
+      <h1 style="color: lightskyblue; margin-left: 5%">Các bài viết</h1>
+      <div class="slideshow"></div>
+      <br />
+      <div class="third">
+        <div class="same">
+          <img
+            src="https://azureams.github.io/assets/thumbnails/azureams_website_0_1release.png"
+            alt="Image"
+            class="image"
+          />
+          <div class="content">
+            <h1>
+              <str style="color: skyblue">Blog |</str> Từ AzureAms PR Team
+            </h1>
+            <br />
+            <h1>Giới thiệu về ngôn ngữ lập trình Swift</h1>
+            <br />
+            <p>
+              Swift là gì? Swift là một ngôn ngữ lập trình hướng đối tượng để
+              phát triển các hệ điều hành của Apple như iOs, macOS, ...
+            </p>
+          </div> <br>
+          
+        <br>
+    </div>
+    <br>
+    <div class="sAme">
+      <img
+        src="https://azureams.github.io/assets/thumbnails/azureams_website_0_1release.png"
+        alt="Image"
+        class="image"
+      />
+      <div class="contenT">
+        <h1>
+          <str style="color: skyblue">Blog |</str> Từ AzureAms PR Team
+        </h1>
+        <br />
+        <h1>Giới thiệu về ngôn ngữ lập trình Swift</h1>
+        <br />
+        <p>
+          Swift là gì? Swift là một ngôn ngữ lập trình hướng đối tượng để
+          phát triển các hệ điều hành của Apple như iOs, macOS, ...
+        </p>
+      </div>
+    </div>
+      <br>
+      <div class="saMe">
+        <img
+          src="https://azureams.github.io/assets/thumbnails/azureams_website_0_1release.png"
+          alt="Image"
+          class="image"
+        />
+        <div class="conTenT">
+          <h1>
+            <str style="color: skyblue">Blog |</str> Từ AzureAms PR Team
+          </h1>
+          <br />
+          <h1>Giới thiệu về ngôn ngữ lập trình Swift</h1>
+          <br />
+          <p>
+            Swift là gì? Swift là một ngôn ngữ lập trình hướng đối tượng để
+            phát triển các hệ điều hành của Apple như iOs, macOS, ...
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="a">
+        <a href="http://">Cũ hơn</a>
+      </div>
+     
+    <script src="new-blog.js"></script>
+    <script>
+      const slideshow = document.querySelector(".slideshow");
+      const images = [
+        {
+          url: "image1.jpg",
+          alt: "Image 1",
+          caption: "This is the first image",
+        },
+        {
+          url: "image2.jpg",
+          alt: "Image 2",
+          caption: "This is the second image",
+        },
+        {
+          url: "image3.jpg",
+          alt: "Image 3",
+          caption: "This is the third image",
+        },
+      ];
+      let currentIndex = 0;
+
+      function changeImage() {
+        slideshow.style.backgroundImage = `url(${images[currentIndex].url})`;
+        slideshow.innerHTML = `
+          <div class="caption">${images[currentIndex].caption}</div>
+          <img src="${images[currentIndex].url}" alt="${images[currentIndex].alt}">
+        `;
+        currentIndex = (currentIndex + 1) % images.length;
+      }
+
+      setInterval(changeImage, 10000);
+    </script>
+  </body>
+</html>
